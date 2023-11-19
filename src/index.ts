@@ -35,3 +35,45 @@ let numbers: number[] = [1,2,3,4];
 // news[1] = "1";
 
 let newNumber: number[] = [];
+
+newNumber = [1,2,3,4,5];
+// newNumber.forEach(i => i.); since the compiler identifies this as a number it give number methods
+
+
+//! Tuple
+// Tuple means a fixed size  where each element has a fixed type
+let user: [number, string] = [1,"Rahul"];
+// user[0].  compiler gives the number object here because we have it as number
+// user[1].  compiler gives the string object here because we have it as string
+
+
+
+//!ENUMS
+
+//defining the size of tshirt
+// const small = 1;
+// const medium = 2;
+// const large = 3;
+
+//to replace this 3 const sizes we can group the under an enum
+//groups related constants together
+
+enum Size{
+    Small=1,
+    Medium,
+    Large
+}
+
+//! by initializing small to one the rest will be initialized to 2 and 3 repectively
+//!when we initialize it with the number
+
+
+//!but when we give small a string value  we need to initialize all the 3 sizes
+// enum Size{
+//     Small="r",
+//     Medium=3,
+//     Large= "G"
+// }
+let MySize :Size = Size.Medium;
+//varible : type = type.constant
+console.log(MySize);
