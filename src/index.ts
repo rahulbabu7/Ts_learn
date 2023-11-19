@@ -27,3 +27,11 @@ let isPusblished: boolean = true;
 
 
 //!array
+
+
+let numbers: number[] = [1,2,3,4];
+// let news = [];  //!type of any array to avoid this
+// news[0] = 1;
+// news[1] = "1";
+
+let newNumber: number[] = [];

@@ -11,4 +11,6 @@ let level;
 level = 1;
 level = "Rahul";
 let isPusblished = true;
+let numbers = [1, 2, 3, 4];
+let newNumber = [];
 //# sourceMappingURL=index.js.map
