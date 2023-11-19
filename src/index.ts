@@ -160,3 +160,71 @@ else{
 // in js object is dynamic that we can change its size ie we can add more things to the object
 //but in TS we cannot 
 
+// let employee : {
+//     id:number,
+//     // name?:string //optionally
+//     name:string
+// }
+//  = {
+//     id:1,name: "Rahul"
+//  }
+
+ //!HERE  we can change the value of id  like employee.id = 0
+ //!to prevent that we can use readonly thing
+
+//  let employee : {
+//    readonly id: number,
+
+//     name: string
+// }
+//  = {
+//     id:1,name: "Rahul"
+//  }
+//!  employee.id = 9;  bring error because id is only readonly
+
+
+//!adding function in the obj  (we need specify how many parameters it have .Type of each parameter and type of the return value )
+
+let employee : {
+    readonly id: number,
+     name: string,
+     retire: (date :Date)=>void 
+}
+= {
+    id:1,
+    name: "Rahul",
+    retire:(date:Date)=>{
+        console.log(date);
+    }
+    
+}
+
+//!advanced types
+
+
+//!using a type alias we can define a custom type
+//!alt plus up to move codes up 
+
+
+//!for reusable
+type Employees = {
+    readonly id: number,
+     name: string,
+     retire: (date :Date)=>void    //!(we need specify how many parameters it have .Type of each parameter and type of the return value )
+
+}
+
+//!union give more than 1 type
+function kgTolbs(weight : number | string): number
+{
+//Narrowing to get the string and number obj
+if(typeof weight === 'number')
+{
+    return weight *2.2;
+}
+else{
+    return Number(weight) *2.2;
+}
+}
+
+//!intersection type

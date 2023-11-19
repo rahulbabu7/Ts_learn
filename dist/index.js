@@ -39,4 +39,19 @@ function test2(income, taxYear = 2022) {
         return income;
     }
 }
+let employee = {
+    id: 1,
+    name: "Rahul",
+    retire: (date) => {
+        console.log(date);
+    }
+};
+function kgTolbs(weight) {
+    if (typeof weight === 'number') {
+        return weight * 2.2;
+    }
+    else {
+        return Number(weight) * 2.2;
+    }
+}
 //# sourceMappingURL=index.js.map
