@@ -17,4 +17,10 @@ newNumber = [1, 2, 3, 4, 5];
 let user = [1, "Rahul"];
 let MySize = 2;
 console.log(MySize);
+function calculateTax(income) {
+    console.log(income);
+}
+function demo(income) {
+    return income;
+}
 //# sourceMappingURL=index.js.map

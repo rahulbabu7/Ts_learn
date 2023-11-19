@@ -101,3 +101,22 @@ console.log(MySize);
 //let MySize = 2;
 // console.log(MySize);
 
+
+//!FUNCTIONS
+// if we don't return anything the type of function is void
+
+function calculateTax(income: number): void
+{
+    console.log(income);  //if we add return here it will be error
+}
+//if we return something we need to specify its type or the type of the function will be automatically assigned to the returning thing type
+
+function demo(income: number): number{ 
+    return income;
+}
+
+//we turned on noUnused parameter from tsconfig
+//shows a warning that if the function parameters are not used
+function test1(income: number): number{
+ return 0;
+}
