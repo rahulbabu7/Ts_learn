@@ -15,12 +15,6 @@ let numbers = [1, 2, 3, 4];
 let newNumber = [];
 newNumber = [1, 2, 3, 4, 5];
 let user = [1, "Rahul"];
-var Size;
-(function (Size) {
-    Size[Size["Small"] = 1] = "Small";
-    Size[Size["Medium"] = 2] = "Medium";
-    Size[Size["Large"] = 3] = "Large";
-})(Size || (Size = {}));
-let MySize = Size.Medium;
+let MySize = 2;
 console.log(MySize);
 //# sourceMappingURL=index.js.map

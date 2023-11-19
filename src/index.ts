@@ -58,11 +58,11 @@ let user: [number, string] = [1,"Rahul"];
 //to replace this 3 const sizes we can group the under an enum
 //groups related constants together
 
-enum Size{
-    Small=1,
-    Medium,
-    Large
-}
+// enum Size{
+//     Small=1,
+//     Medium,
+//     Large
+// }
 
 //! by initializing small to one the rest will be initialized to 2 and 3 repectively
 //!when we initialize it with the number
@@ -74,6 +74,30 @@ enum Size{
 //     Medium=3,
 //     Large= "G"
 // }
+// let MySize :Size = Size.Medium;
+// //varible : type = type.constant
+// console.log(MySize);
+
+//! ENUM TO JS
+// var Size;
+// (function (Size) {
+//     Size[Size["Small"] = 1] = "Small";
+//     Size[Size["Medium"] = 2] = "Medium";
+//     Size[Size["Large"] = 3] = "Large";
+// })(Size || (Size = {}));
+// let MySize = Size.Medium;
+// console.log(MySize);
+
+//!if we add a const before enum compiler will give more optimized code
+ const enum Size{
+    Small=1,
+    Medium,
+    Large
+}
 let MySize :Size = Size.Medium;
 //varible : type = type.constant
 console.log(MySize);
+//! const enum to js
+//let MySize = 2;
+// console.log(MySize);
+
