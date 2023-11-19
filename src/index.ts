@@ -117,6 +117,46 @@ function demo(income: number): number{
 
 //we turned on noUnused parameter from tsconfig
 //shows a warning that if the function parameters are not used
+// function test1(income: number): number{
+//  return 0;
+// }
+
+//! JS  will return undefined
+//!this fn has type number || undefined
+//we turned on no implicit return in tsconfig
+//so that we added the else part
 function test1(income: number): number{
- return 0;
+    // let x; definiton on line 138 and 139
+if(income > 50_000)
+{
+    return income *2;
 }
+else{
+    return income;
+}
+}
+//turned on nounsed locals
+//means if we declare a variable and not used it ( in function ig)
+
+
+//!giving a parameter a defined value
+function test2(income: number , taxYear: number = 2022): number{
+    
+if(taxYear > 2022)
+{
+    return income *2;
+}
+else{
+    return income;
+}
+}
+
+//optional parameter taxyear? :number
+
+//enable the three fn in tsconfig file and detail in function ( types and things)
+
+
+//! OBJECT
+// in js object is dynamic that we can change its size ie we can add more things to the object
+//but in TS we cannot 
+

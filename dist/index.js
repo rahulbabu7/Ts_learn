@@ -23,4 +23,20 @@ function calculateTax(income) {
 function demo(income) {
     return income;
 }
+function test1(income) {
+    if (income > 50000) {
+        return income * 2;
+    }
+    else {
+        return income;
+    }
+}
+function test2(income, taxYear = 2022) {
+    if (taxYear > 2022) {
+        return income * 2;
+    }
+    else {
+        return income;
+    }
+}
 //# sourceMappingURL=index.js.map
